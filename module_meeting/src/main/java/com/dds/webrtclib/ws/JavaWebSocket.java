@@ -29,10 +29,6 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-/**
- * Created by dds on 2019/1/3.
- * android_shuai@163.com
- */
 public class JavaWebSocket implements IWebSocket {
 
     private final static String TAG = "dds_JavaWebSocket";

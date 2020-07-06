@@ -1,10 +1,5 @@
 package com.dds.webrtclib.bean;
 
-/**
- * 用户信息
- * Created by dds on 2019/5/3.
- * android_shuai@163.com
- */
 public class MemberBean {
     private String id;
     private String name;

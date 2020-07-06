@@ -2,10 +2,6 @@ package com.dds.webrtclib.ws;
 
 import org.webrtc.IceCandidate;
 
-/**
- * Created by dds on 2019/1/3.
- * android_shuai@163.com
- */
 public interface IWebSocket {
 
 

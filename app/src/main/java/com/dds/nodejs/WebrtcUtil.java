@@ -10,32 +10,30 @@ import com.dds.webrtclib.ui.ChatRoomActivity;
 import com.dds.webrtclib.ui.ChatSingleActivity;
 import com.dds.webrtclib.ws.IConnectEvent;
 
-/**
- * Created by dds on 2019/1/7.
- * android_shuai@163.com
- */
 public class WebrtcUtil {
 
 
-    public static final String HOST = "47.93.186.97";
+    public static final String HOST = "ad4fb13020b5.ngrok.io";
+    public static final String HOST1 = "0686f048598a.ngrok.io";
+    public static final String HOST2 = "52.149.214.3:3470";
 
     // turn and stun
     private static MyIceServer[] iceServers = {
-            new MyIceServer("stun:stun.l.google.com:19302"),
+            //new MyIceServer("stun:stun.l.google.com:19302"),
 
-            // 测试地址1
-            new MyIceServer("stun:" + HOST + ":3478?transport=udp"),
-            new MyIceServer("turn:" + HOST + ":3478?transport=udp",
-                    "ddssingsong",
-                    "123456"),
-            new MyIceServer("turn:" + HOST + ":3478?transport=tcp",
-                    "ddssingsong",
-                    "123456"),
+            // Dirección de prueba 1
+            new MyIceServer("stun:" + HOST2 + "?transport=udp"),
+            new MyIceServer("turn:" + HOST2 + "?transport=udp",
+                    "aza",
+                    "123"),
+            new MyIceServer("turn:" + HOST2 + "?transport=tcp",
+                    "aza",
+                    "123"),
     };
 
     // signalling
-    private static String WSS = "wss://" + HOST + "/wss";
-    //本地测试信令地址
+    private static String WSS = "wss://" + HOST1 + "/wss";
+    // Dirección de señalización de prueba local
     // private static String WSS = "ws://192.168.1.138:3000";
 
     // one to one

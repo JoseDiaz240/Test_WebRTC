@@ -5,10 +5,6 @@ import org.webrtc.IceCandidate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by dds on 2019/1/3.
- * android_shuai@163.com
- */
 public interface ISignalingEvents {
 
     // webSocket连接成功

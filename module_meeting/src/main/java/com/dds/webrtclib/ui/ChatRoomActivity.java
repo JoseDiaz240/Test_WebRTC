@@ -84,7 +84,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IViewCallback
     }
 
     private void initVar() {
-        // 设置宽高比例
+        // Establecer relación de aspecto
         WindowManager manager = (WindowManager) getSystemService(WINDOW_SERVICE);
         if (manager != null) {
             mScreenWidth = manager.getDefaultDisplay().getWidth();
@@ -274,7 +274,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IViewCallback
     }
 
 
-    @Override  // 屏蔽返回键
+    @Override  // Bloquear la tecla de retorno
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         return keyCode == KeyEvent.KEYCODE_BACK || super.onKeyDown(keyCode, event);
     }
@@ -293,28 +293,28 @@ public class ChatRoomActivity extends AppCompatActivity implements IViewCallback
 
     }
 
-    // 切换摄像头
+    // Cambiar de cámara
     public void switchCamera() {
         manager.switchCamera();
     }
 
-    // 挂断
+    // Colgar
     public void hangUp() {
         exit();
         this.finish();
     }
 
-    // 静音
+    // Mudo
     public void toggleMic(boolean enable) {
         manager.toggleMute(enable);
     }
 
-    // 免提
+    // Manos libres
     public void toggleSpeaker(boolean enable) {
         manager.toggleSpeaker(enable);
     }
 
-    // 打开关闭摄像头
+    // Abrir y cerrar la cámara
     public void toggleCamera(boolean enableCamera) {
         if (_localVideoTrack != null) {
             _localVideoTrack.setEnabled(enableCamera);

@@ -10,10 +10,6 @@ import androidx.core.content.ContextCompat;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by dds on 2019/1/2.
- * android_shuai@163.com
- */
 public class PermissionUtil {
 
 

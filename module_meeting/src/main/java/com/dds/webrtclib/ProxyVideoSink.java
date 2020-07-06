@@ -4,10 +4,6 @@ import org.webrtc.Logging;
 import org.webrtc.VideoFrame;
 import org.webrtc.VideoSink;
 
-/**
- * Created by dds on 2019/4/4.
- * android_shuai@163.com
- */
 public class ProxyVideoSink implements VideoSink {
     private static final String TAG = "dds_ProxyVideoSink";
     private VideoSink target;

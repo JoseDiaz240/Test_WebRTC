@@ -10,6 +10,7 @@
 
 package org.webrtc;
 
+import android.util.Log;
 import android.view.SurfaceHolder;
 import java.util.concurrent.CountDownLatch;
 
@@ -155,6 +156,7 @@ public class SurfaceEglRenderer extends EglRenderer implements SurfaceHolder.Cal
   }
 
   private void logD(String string) {
+    Log.i("DEBUG","Entra aqui");
     Logging.d(TAG, name + ": " + string);
   }
 }

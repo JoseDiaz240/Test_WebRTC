@@ -9,22 +9,14 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.dds.webrtc.R;
 
-
-/**
- * Created by dds on 2018/11/7.
- * android_shuai@163.com
- */
 public class NodejsActivity extends AppCompatActivity {
     private EditText et_signal;
     private EditText et_room;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nodejs);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         initView();
         initVar();
 
@@ -36,11 +28,11 @@ public class NodejsActivity extends AppCompatActivity {
     }
 
     private void initVar() {
-        et_signal.setText("wss://47.93.186.97/wss");
-        et_room.setText("232343");
+        et_signal.setText("http://52.149.214.3:8084/");
+        et_room.setText("8084");
     }
 
-    /*-------------------------- nodejs版本服务器测试--------------------------------------------*/
+    /*-------------------- Prueba del servidor de versión Nodejs ---------------------------*/
     public void JoinRoomSingleVideo(View view) {
         WebrtcUtil.callSingle(this,
                 et_signal.getText().toString(),

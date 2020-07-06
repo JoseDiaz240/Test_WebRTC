@@ -17,11 +17,6 @@ import org.webrtc.IceCandidate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 控制信令和各种操作
- * Created by dds on 2019/4/5.
- * android_shuai@163.com
- */
 public class WebRTCManager implements ISignalingEvents {
     private final static String TAG = "sing_WebRTCManager";
     private String _wss;
@@ -64,7 +59,7 @@ public class WebRTCManager implements ISignalingEvents {
             _webSocket.connect(_wss);
             _peerHelper = new PeerConnectionHelper(_webSocket, _iceServers);
         } else {
-            // 正在通话中
+            // En llamada
             _webSocket.close();
             _webSocket = null;
             _peerHelper = null;
@@ -79,7 +74,7 @@ public class WebRTCManager implements ISignalingEvents {
         }
     }
 
-    //===================================控制功能==============================================
+    //===================================función de control==============================================
     public void joinRoom(Context context, EglBase eglBase) {
         if (_peerHelper != null) {
             _peerHelper.initContext(context, eglBase);

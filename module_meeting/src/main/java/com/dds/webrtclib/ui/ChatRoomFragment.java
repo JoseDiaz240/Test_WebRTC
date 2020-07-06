@@ -14,11 +14,6 @@ import android.widget.TextView;
 import com.dds.webrtclib.R;
 import com.dds.webrtclib.utils.Utils;
 
-/**
- * 视频会议控制界面
- * Created by dds on 2019/1/2.
- * android_shuai@163.com
- */
 public class ChatRoomFragment extends Fragment {
 
     public View rootView;

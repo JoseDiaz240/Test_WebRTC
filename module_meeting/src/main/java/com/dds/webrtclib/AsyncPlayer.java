@@ -10,10 +10,6 @@ import android.util.Log;
 import java.io.IOException;
 import java.util.LinkedList;
 
-/**
- * Created by dds on 2019/7/25.
- * android_shuai@163.com
- */
 public class AsyncPlayer {
     private static final int PLAY = 1;
     private static final int STOP = 2;

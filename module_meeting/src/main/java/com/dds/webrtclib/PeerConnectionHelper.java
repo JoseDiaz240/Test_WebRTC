@@ -281,7 +281,7 @@ public class PeerConnectionHelper {
 
     // 为所有连接添加流
     private void addStreams() {
-        Log.v(TAG, "为所有连接添加流");
+        Log.v(TAG, "Agregar transmisiones para todos los enlaces");
         for (Map.Entry<String, Peer> entry : _connectionPeerDic.entrySet()) {
             if (_localStream == null) {
                 createLocalStream();

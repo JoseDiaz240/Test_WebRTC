@@ -1,9 +1,5 @@
 package com.dds.webrtclib;
 
-/**
- * Created by dds on 2019/7/24.
- * android_shuai@163.com
- */
 public class VideoProfile {
     public static final int VP120P = 0;
     public static final int VP120P_3 = 2;
