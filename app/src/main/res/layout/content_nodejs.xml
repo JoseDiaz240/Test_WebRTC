@@ -31,6 +31,13 @@
                 android:layout_height="wrap_content"
                 android:hint="ID de la sala (123456)" />
 
+            <EditText
+                android:id="@+id/usuario_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:hint="NOmbre" />
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
@@ -38,6 +45,15 @@
                 android:layout_marginTop="20dp"
                 android:onClick="JoinRoom"
                 android:text="Únete a la sala"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/button_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="JoinRoom"
+                android:text="Establecer"
                 tools:ignore="OnClick" />
 
             <Button

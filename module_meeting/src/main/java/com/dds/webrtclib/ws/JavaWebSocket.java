@@ -23,6 +23,7 @@ import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
@@ -34,6 +35,8 @@ public class JavaWebSocket implements IWebSocket {
     private final static String TAG = "dds_JavaWebSocket";
 
     private WebSocketClient mWebSocketClient;
+
+    public static String user_id = "Test";
 
     private ISignalingEvents events;
 
@@ -63,7 +66,7 @@ public class JavaWebSocket implements IWebSocket {
                 @Override
                 public void onMessage(String message) {
                     isOpen = true;
-                    Log.d(TAG, message);
+                    Log.d(TAG, "ID -->" + message);
                     handleMessage(message);
                 }
 
@@ -129,6 +132,7 @@ public class JavaWebSocket implements IWebSocket {
     public void joinRoom(String room) {
         Map<String, Object> map = new HashMap<>();
         map.put("eventName", "__join");
+        map.put("user_id", user_id);
         Map<String, String> childMap = new HashMap<>();
         childMap.put("room", room);
         map.put("data", childMap);
